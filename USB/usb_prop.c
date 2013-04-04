@@ -143,33 +143,33 @@ void Device_Reset()
       SetDeviceAddress(0);
 }
 
-void USB_Interrupts_Config(void)
-{
-  NVIC_InitTypeDef NVIC_InitStructure;
-
-  NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
-
-  NVIC_InitStructure.NVIC_IRQChannel = USB_LP_CAN1_RX0_IRQn;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
-  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
-  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-  NVIC_Init(&NVIC_InitStructure);
-
-
-  NVIC_InitStructure.NVIC_IRQChannel = USB_HP_CAN1_TX_IRQn;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
-  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
-  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-  NVIC_Init(&NVIC_InitStructure);
-}
-
-void Set_USBClock()
-{
-  /* Select USBCLK source */
-  RCC_USBCLKConfig(RCC_USBCLKSource_PLLCLK_1Div5);
-  /* Enable the USB clock */
-  RCC_APB1PeriphClockCmd(RCC_APB1Periph_USB, ENABLE);
-}
+//void USB_Interrupts_Config(void)
+//{
+//  NVIC_InitTypeDef NVIC_InitStructure;
+//
+//  NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
+//
+//  NVIC_InitStructure.NVIC_IRQChannel = USB_LP_CAN1_RX0_IRQn;
+//  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
+//  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
+//  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+//  NVIC_Init(&NVIC_InitStructure);
+//
+//
+//  NVIC_InitStructure.NVIC_IRQChannel = USB_HP_CAN1_TX_IRQn;
+//  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
+//  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+//  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+//  NVIC_Init(&NVIC_InitStructure);
+//}
+//
+//void Set_USBClock()
+//{
+//  /* Select USBCLK source */
+//  RCC_USBCLKConfig(RCC_USBCLKSource_PLLCLK_1Div5);
+//  /* Enable the USB clock */
+//  RCC_APB1PeriphClockCmd(RCC_APB1Periph_USB, ENABLE);
+//}
 
 void USB_HP_CAN1_TX_IRQHandler(void)
 {
@@ -343,8 +343,8 @@ void USB_LP_CAN1_RX0_IRQHandler(void)
 * Output         : None.
 * Return         : None.
 *******************************************************************************/
-void Device_Status_Out(void)
-{}
+//void Device_Status_Out(void)
+//{}
 
 /*******************************************************************************
 * Function Name  : Virtual_Com_Port_Data_Setup

@@ -9,4 +9,10 @@
 typedef enum {FALSE = 0, TRUE = !FALSE} bool;
 #endif // bool
 
+typedef enum _GRAPHIC_STATE
+{
+  NOT_ADDRESSED,
+  TRANSFER_IN_PROGRESS
+} GRAPHIC_STATE;
+
 #endif	// __BOARD_H__

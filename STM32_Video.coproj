@@ -128,8 +128,8 @@
     <File name="stm_usb/inc/usb_type.h" path="stm_usb_fs_lib/inc/usb_type.h" type="1"/>
     <File name="stm_usb/usb_sil.c" path="stm_usb_fs_lib/src/usb_sil.c" type="1"/>
     <File name="stm_lib/inc" path="" type="2"/>
-    <File name="stm_usb/inc" path="" type="2"/>
     <File name="main.c" path="main.c" type="1"/>
+    <File name="stm_usb/inc" path="" type="2"/>
     <File name="usb/inc/usb_pwr.h" path="USB/inc/usb_pwr.h" type="1"/>
   </Files>
 </Project>
