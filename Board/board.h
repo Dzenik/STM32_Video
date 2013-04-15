@@ -4,10 +4,11 @@
 #include "stm32f10x.h"
 #include "stm32f10x_conf.h"
 #include "ssd1289.h"
+#include "usb_lib.h"
 
-#ifndef bool
-typedef enum {FALSE = 0, TRUE = !FALSE} bool;
-#endif // bool
+//#ifndef bool
+//typedef enum {FALSE = 0, TRUE = !FALSE} bool;
+//#endif // bool
 
 typedef enum _GRAPHIC_STATE
 {

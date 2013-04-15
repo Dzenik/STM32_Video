@@ -70,7 +70,7 @@ void EP1_OUT_Callback(void)
         dataLen-=8;
     }
 
-    LCD_WriteRAM_Prepare;
+    LCD_WriteRAM_Prepare();
     PMAToLCDBufferCopy(GetEPRxAddr(EP1_OUT & 0x7F), offset, dataLen);
     dataTransfered+=(dataLen)>>1;
     if(dataTransfered >= dataTotal)

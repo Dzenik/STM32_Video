@@ -74,16 +74,16 @@
   </Components>
   <Files>
     <File name="stm_usb/inc/usb_int.h" path="stm_usb_fs_lib/inc/usb_int.h" type="1"/>
-    <File name="usb/usb_desc.c" path="USB/usb_desc.c" type="1"/>
     <File name="usb/inc/usb_prop.h" path="USB/inc/usb_prop.h" type="1"/>
+    <File name="usb/usb_desc.c" path="USB/usb_desc.c" type="1"/>
     <File name="stm_usb/inc/usb_core.h" path="stm_usb_fs_lib/inc/usb_core.h" type="1"/>
     <File name="Board/ssd1289.h" path="Board/ssd1289.h" type="1"/>
     <File name="stm_usb/inc/usb_sil.h" path="stm_usb_fs_lib/inc/usb_sil.h" type="1"/>
     <File name="stm_usb/inc/usb_init.h" path="stm_usb_fs_lib/inc/usb_init.h" type="1"/>
     <File name="cmsis_boot" path="" type="2"/>
     <File name="usb/hw_config.c" path="USB/hw_config.c" type="1"/>
-    <File name="usb/inc/usb_conf.h" path="USB/inc/usb_conf.h" type="1"/>
     <File name="stm_lib/inc/stm32f10x_fsmc.h" path="stm_lib/inc/stm32f10x_fsmc.h" type="1"/>
+    <File name="usb/inc/usb_conf.h" path="USB/inc/usb_conf.h" type="1"/>
     <File name="usb/inc/usb_desc.h" path="USB/inc/usb_desc.h" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
     <File name="cmsis_boot/startup/startup_stm32f10x_hd.c" path="cmsis_boot/startup/startup_stm32f10x_hd.c" type="1"/>
@@ -104,9 +104,9 @@
     <File name="stm_lib/inc/misc.h" path="stm_lib/inc/misc.h" type="1"/>
     <File name="stm_usb/usb_regs.c" path="stm_usb_fs_lib/src/usb_regs.c" type="1"/>
     <File name="Board" path="" type="2"/>
-    <File name="cmsis/core_cm3.h" path="cmsis/core_cm3.h" type="1"/>
-    <File name="stm_usb" path="" type="2"/>
     <File name="stm_usb/usb_mem.c" path="stm_usb_fs_lib/src/usb_mem.c" type="1"/>
+    <File name="stm_usb" path="" type="2"/>
+    <File name="cmsis/core_cm3.h" path="cmsis/core_cm3.h" type="1"/>
     <File name="usb/usb_pwr.c" path="USB/usb_pwr.c" type="1"/>
     <File name="stm_lib/src/stm32f10x_rcc.c" path="stm_lib/src/stm32f10x_rcc.c" type="1"/>
     <File name="stm_usb/usb_core.c" path="stm_usb_fs_lib/src/usb_core.c" type="1"/>
@@ -124,8 +124,8 @@
     <File name="stm_lib/inc/stm32f10x_rcc.h" path="stm_lib/inc/stm32f10x_rcc.h" type="1"/>
     <File name="stm_usb/inc/usb_lib.h" path="stm_usb_fs_lib/inc/usb_lib.h" type="1"/>
     <File name="stm_usb/usb_int.c" path="stm_usb_fs_lib/src/usb_int.c" type="1"/>
-    <File name="stm_usb/usb_init.c" path="stm_usb_fs_lib/src/usb_init.c" type="1"/>
     <File name="stm_usb/inc/usb_type.h" path="stm_usb_fs_lib/inc/usb_type.h" type="1"/>
+    <File name="stm_usb/usb_init.c" path="stm_usb_fs_lib/src/usb_init.c" type="1"/>
     <File name="stm_usb/usb_sil.c" path="stm_usb_fs_lib/src/usb_sil.c" type="1"/>
     <File name="stm_lib/inc" path="" type="2"/>
     <File name="main.c" path="main.c" type="1"/>

@@ -1,4 +1,8 @@
 #include "Board/board.h"
+#include "hw_config.h"
+//#include "usb_lib.h"
+#include "usb_pwr.h"
+
 
 volatile uint32_t Tick = 0x00000000;
 void SysTick_Handler()
@@ -15,11 +19,21 @@ void SysTickDelay(uint32_t msDelay)
 
 int main(void)
 {
-    /* Set the Vector Table base location at 0x08000000 */
-    NVIC_SetVectorTable(NVIC_VectTab_FLASH, 0x0);
+    Set_System();
+	/* Set the Vector Table base location at 0x08000000 */
+//    NVIC_SetVectorTable(NVIC_VectTab_FLASH, 0x0);
 
     LCD_Setup();
 	LCD_Clear(0x0000);
+
+	Set_USBClock();
+	USB_Interrupts_Config();
+	USB_Init();
+	Device_init();
+	Device_Reset();
+	while(bDeviceState != CONFIGURED);
+
+
 
 	GPIO_InitTypeDef GPIO_InitStructure;
 
